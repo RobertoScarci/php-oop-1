@@ -3,27 +3,33 @@
     class Movies{
         public $titolo;
         public $genere;
-        public $cast;
+        public $imageUrl;
         public $data_pubblicazione;
 
-        public function __construct(String $titolo, String $genere, Float $cast, Float $data_pubblicazione){
+           /**
+         * Construct function that generate a movie.
+         * 
+         * @param String $titolo The Movies's title.
+         * @param String $genere The Movies's genrs.
+         * @param String $imgUrl The image Url of the movie.
+         * @param String $data_pubblicazione The release date of the movie.
+         */
+
+        public function __construct(String $titolo, String $genere, String $imageUrl, String $data_pubblicazione){
             $this->titolo = $titolo;
             $this->genere = $genere;
-            $this->cast = $cast;
+            $this->imageUrl = $imageUrl;
             $this->data_pubblicazione = $data_pubblicazione;
         }
 
-        public function getName() {
-            echo $this->titolo;
+        public function getTitle() {
+            return $this->titolo;
         }
 
         public function getGenre() {
-            echo $this->genere;
+            return $this->genere;
         }
 
-        public function getWeight() {
-            echo $this->cast;
-        }
     }
 
     ?>
