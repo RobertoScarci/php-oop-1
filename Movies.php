@@ -15,11 +15,11 @@
          * @param String $data_pubblicazione The release date of the movie.
          */
 
-        public function __construct(String $titolo, String $genere, String $imageUrl, String $data_pubblicazione){
-            $this->titolo = $titolo;
-            $this->genere = $genere;
-            $this->imageUrl = $imageUrl;
-            $this->data_pubblicazione = $data_pubblicazione;
+        public function __construct(String $_titolo, String $_genere, String $_imageUrl, String $_data_pubblicazione){
+            $this->titolo = $_titolo;
+            $this->genere = $_genere;
+            $this->imageUrl = $_imageUrl;
+            $this->data_pubblicazione = $_data_pubblicazione;
         }
 
         public function getTitle() {

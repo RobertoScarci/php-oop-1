@@ -1,11 +1,13 @@
 <?php 
 
-require_once __DIR__ . '../Movies.php';
+require_once __DIR__ . '/Movies.php';
 
-$horrorFilm = new Movies('La società della neve', 'Commedia', 'https://image.tmdb.org/t/p/w500/eOu5TmFYmLJ1bzRMWNmxWAtU7cQ.jpg', '2023-12-13');
-$comedyFilm = new Movies('La società della neve', 'Commedia', 'https://image.tmdb.org/t/p/w500/eOu5TmFYmLJ1bzRMWNmxWAtU7cQ.jpg', '2023-12-13');
+$movies = [
+    new Movies('La società della neve', 'Commedia', 'https://image.tmdb.org/t/p/w500/eOu5TmFYmLJ1bzRMWNmxWAtU7cQ.jpg', '2023-12-13'),
+    new Movies('Scream 4', 'Horror', 'https://m.media-amazon.com/images/I/61nQR9fZltL._AC_UF894,1000_QL80_.jpg', '2022-10-13'),
+    new Movies('Star Wars III: Revenge of Sith', 'Fantasy', 'https://i.etsystatic.com/24635155/r/il/81313d/4040350169/il_fullxfull.4040350169_mamn.jpg', '2005-10-13'),
+];
 
-var_dump($horrorFilm)
 
 ?>
 
